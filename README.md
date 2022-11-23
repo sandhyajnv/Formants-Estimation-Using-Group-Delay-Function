@@ -10,7 +10,7 @@ INSTALLATION INSTRUCTION:
 Download the main code.  This code uses signal processing and speech processing libraries as scipy and librosa respectively.
 
 Installation of libraries:
-pip install --user scipy
+pip install --user scipy,
 pip install librosa
 
 How to use:
