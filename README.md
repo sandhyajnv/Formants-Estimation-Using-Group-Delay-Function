@@ -1,7 +1,10 @@
  Formants-Estimation-Using-Group-Delay-Function
 This project finds the formants frequencies of a speech signal.
+
 . In this project User provides a speech file(wav file)
+
 . Native sampling rate is preserved for the speech file.
+
 .Choose appropriate win- size and hop length while making frames of the given speech file.
 
 
