@@ -1,0 +1,30 @@
+
+
+def groupDelay(framesp,hw): # group delay function
+
+  y=[]
+  for frames in framesp:
+    y1=[]
+    for index,value in enumerate(frames):
+      y1.append(index*value)      # for y = nx[n]
+    y.append(y1)
+    
+  y=np.array(y)
+  x=framesp
+  dftxg=[]   # dftx for group delay
+  dftyg=[]    # dfty for group delay
+  for i in range(len(x)):
+    dftxg.append((fft(np.multiply(hw,x[i])))) # applying hamming window and claculting fft 
+    dftyg.append((fft(np.multiply(hw,y[i]))))  # hamming window window and calculating fft
+  
+  dftxg=np.array(dftxg)   # changing in array
+  dftyg=np.array(dftyg)  # changing in array
+  
+  
+
+  for i in range(len(dftxg)):
+    x=np.multiply(dftxg.real,dftyg.real) # extracting real part from the fft of x(n) and nx(n) frame and multiplying
+    y=np.multiply(dftxg.imag,dftyg.imag) # # extracting imaginary part from the fft of x(n) and nx(n) frame and multiplying
+  
+  return (x+y)  # summing them will give group delay function t(w)
+    
