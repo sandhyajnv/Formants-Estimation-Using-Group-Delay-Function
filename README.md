@@ -21,3 +21,6 @@ pip install librosa
 How to use:
 Download the wav file from example data file and run the main code by providing path of your speech file and to get formants corresponding to each frame print formants.
   
+  
+ peaks for frame=65
+![peak](https://user-images.githubusercontent.com/105709848/203570290-f4af001f-9f8c-4e35-9c80-e37673edb0a1.PNG)
