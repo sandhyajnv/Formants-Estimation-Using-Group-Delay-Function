@@ -1,4 +1,5 @@
- Formants-Estimation-Using-Group-Delay-Function
+ Formants-Estimation-Using-Group-Delay-Function 
+ 
 This project finds the formants frequencies of a speech signal.
 
 . In this project User provides a speech file(wav file)
@@ -14,6 +15,7 @@ Download the main code.  This code uses signal processing and speech processing 
 
 Installation of libraries:
 pip install --user scipy,
+
 pip install librosa
 
 How to use:
