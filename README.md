@@ -20,3 +20,4 @@ pip install librosa
 
 How to use:
 Download the wav file from example data file and run the main code by providing path of your speech file and to get formants corresponding to each frame print formants.
+  
